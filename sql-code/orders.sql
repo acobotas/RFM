@@ -2,7 +2,7 @@ SELECT
 InvoiceNo,
 CustomerID,
 SUM(Quantity * UnitPrice) AS TotalPrice
- FROM `rfm` 
+ FROM `tc-da-1.turing_data_analytics.rfm` 
    WHERE
     CustomerID IS NOT NULL
     AND InvoiceDate >= '2010-12-01' AND InvoiceDate < '2011-12-01'
